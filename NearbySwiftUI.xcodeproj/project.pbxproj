@@ -15,6 +15,7 @@
 		FFDB146E29B7FAD100260062 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDB146D29B7FAD100260062 /* Article.swift */; };
 		FFDB147029B7FDF500260062 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDB146F29B7FDF500260062 /* LocationManager.swift */; };
 		FFDB147229B809FA00260062 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDB147129B809FA00260062 /* Parser.swift */; };
+		FFDB147529B81E8300260062 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDB147429B81E8300260062 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,8 @@
 		FFDB146D29B7FAD100260062 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		FFDB146F29B7FDF500260062 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		FFDB147129B809FA00260062 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		FFDB147329B8124F00260062 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FFDB147429B81E8300260062 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +62,14 @@
 		FFDB145C29B7FA6100260062 /* NearbySwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				FFDB147329B8124F00260062 /* Info.plist */,
 				FFDB146B29B7FAA800260062 /* AppData.swift */,
 				FFDB146D29B7FAD100260062 /* Article.swift */,
 				FFDB146F29B7FDF500260062 /* LocationManager.swift */,
 				FFDB147129B809FA00260062 /* Parser.swift */,
 				FFDB145D29B7FA6100260062 /* NearbySwiftUIApp.swift */,
 				FFDB145F29B7FA6100260062 /* ContentView.swift */,
+				FFDB147429B81E8300260062 /* DetailView.swift */,
 				FFDB146129B7FA6200260062 /* Assets.xcassets */,
 				FFDB146329B7FA6200260062 /* Preview Content */,
 			);
@@ -152,6 +157,7 @@
 				FFDB146E29B7FAD100260062 /* Article.swift in Sources */,
 				FFDB146029B7FA6100260062 /* ContentView.swift in Sources */,
 				FFDB147229B809FA00260062 /* Parser.swift in Sources */,
+				FFDB147529B81E8300260062 /* DetailView.swift in Sources */,
 				FFDB147029B7FDF500260062 /* LocationManager.swift in Sources */,
 				FFDB145E29B7FA6100260062 /* NearbySwiftUIApp.swift in Sources */,
 				FFDB146C29B7FAA800260062 /* AppData.swift in Sources */,
@@ -286,6 +292,8 @@
 				DEVELOPMENT_TEAM = P8RDT88SUS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NearbySwiftUI/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "このアプリはアプリの使用中のみ位置情報を利用します。";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -315,6 +323,8 @@
 				DEVELOPMENT_TEAM = P8RDT88SUS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NearbySwiftUI/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "このアプリはアプリの使用中のみ位置情報を利用します。";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

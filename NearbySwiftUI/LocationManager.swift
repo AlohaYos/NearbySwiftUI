@@ -35,7 +35,7 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
 	
 	func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
 		self.location = locations.last!
-		//appData.coordinate = locations[0].coordinate
+		appData.coordinate = locations[0].coordinate
 		
 		/* Tokyo tower location */
 		var tmpCood = CLLocationCoordinate2D()
@@ -45,9 +45,11 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
 		/* */
 
 		_replDebugPrintln("緯度:\(appData.coordinate.latitude) 経度:\(appData.coordinate.longitude)")
-//		// POI情報のパース
-//		GetAndParseInformation()
-//		// リストの再表示
+		// POI情報のパース
+		appData.articles = []
+		appData.parser.GetAndParseInformation()
+
+		// リストの再表示
 //		let navControl = UIApplication.shared.keyWindow?.rootViewController as! UINavigationController
 ////		let tableVC = navControl.storyboard?.instantiateViewController(withIdentifier: "TableVC") as! TableVC
 //		let tableVC = navControl.topViewController as! TableVC

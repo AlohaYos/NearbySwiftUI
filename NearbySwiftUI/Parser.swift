@@ -10,6 +10,8 @@ import Foundation
 class Parser: NSObject, XMLParserDelegate {
 	var appData: AppData!
 	var parser:XMLParser!
+	var currentElement:String? = nil
+	var anArticle:Article? = nil
 
 	override init() {
 		super.init()
