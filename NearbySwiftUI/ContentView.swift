@@ -6,17 +6,25 @@
 //
 
 import SwiftUI
+import CoreLocation
+
+var isLocationChanged: Bool = false
+var currentElement:String? = nil
+var anArticle:Article? = nil
+var parser:XMLParser!
 
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
-    }
+	@EnvironmentObject var appData : AppData
+
+	var body: some View {
+		VStack {
+			Image(systemName: "globe")
+				.imageScale(.large)
+				.foregroundColor(.accentColor)
+			Text("Hello, world!")
+		}
+		.padding()
+	}
 }
 
 struct ContentView_Previews: PreviewProvider {

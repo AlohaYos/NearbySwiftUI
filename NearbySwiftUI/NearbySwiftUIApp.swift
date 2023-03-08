@@ -12,6 +12,7 @@ struct NearbySwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+				.environmentObject(AppData())
         }
     }
 }
